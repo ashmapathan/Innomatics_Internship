@@ -1,0 +1,470 @@
+body {
+     font-family: 'Roboto', sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f5f5dc;
+     }
+header {
+     display: flex;
+     justify-content: space-between;
+     align-items:  center;
+     padding: 20px;
+     background-color: #6f4e37;
+     color :#f5f5dc;
+     
+     }
+ 
+.title h1 {
+       
+        
+    font-size: 38px;
+    color :#f5f5dc;
+    text-align: center;
+        
+    }
+
+     
+
+     
+     
+.logo {
+    width: 120px; 
+    height: auto;
+    }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+            
+    }
+nav a {
+     margin-right: 50px;
+    color:#f5f5dc;
+    font-size: 20px;
+            
+     }
+    
+.hero {
+     text-align: center;
+     padding: 50px;
+     background: url('coffee-bg.jpg') no-repeat center center/cover;
+     color: rgb(88, 32, 32);
+    
+     }
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    font-size: 10px;
+     }
+            
+    
+           
+           
+.hero h1,
+.hero p,
+.hero.btn {
+    position: relative; 
+    z-index: 2;
+                
+    }
+    
+.hero p {
+   font-size: 20px ;
+    }
+    
+.hero h1{
+    font-size: 20px ;
+    }
+    
+.hero .btn {
+        color:rgb(100, 61, 9);
+        font-size: 20px;
+    }
+    
+.hero img {
+    width: 70%;
+    max-width: 1100px; 
+    height: auto;
+    display: block; 
+    margin: 20px auto; 
+    top: 0;
+            }
+.menu-items {
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    }
+
+.menu h2 {
+    text-align: center;
+    font-size: 40px;
+    color:#6f4e37;
+   }
+.about h2 {
+    text-align: center;
+    font-size: 40px;
+    color:#6f4e37;
+     }
+    
+.about p{
+   text-align: center;
+   font-size: 20px;
+              
+ }
+    
+.about {
+   padding-bottom: 40px;
+   padding-top: 40px;
+   background-color: white; 
+   border: 2px solid #6f4e37; 
+   border-radius: 10px;
+   max-width: 900px; 
+   margin : 20px auto;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+ }
+        
+    
+    
+    .contact {
+        padding-top: 40px; 
+        padding-bottom: 40px;
+    }
+    
+    
+    .contact h2{
+             text-align: center;
+             font-size: 40px;
+             color:#6f4e37;
+     }
+        
+     .item {
+        max-width: 500px;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        overflow: hidden; 
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin: 20px;
+    }
+    
+    .item:hover {
+        background-color: #f5f5f5; 
+        transform: scale(1.05); 
+    }
+    
+    .item h3, .item p {
+        transition: color 0.3s ease;
+    }
+    
+    .item:hover h3, .item:hover p {
+        color: #6f4e37; 
+    }
+    
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 300px;
+        border: none;
+        border-radius: 10px;
+        margin:  20px auto;
+        text-align: center;
+        font-weight: bold;
+                
+     }
+    
+     .contact button {
+        font-weight: bold;
+     }
+    footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #6f4e37;
+                color: white;
+            }
+        
+    
+    
+        
+.logo {
+            width: 120px; 
+            height: auto;
+        }
+nav ul {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   padding: 0;
+        }
+nav a {
+   margin-right: 50px;
+   color:#f5f5dc;
+   font-size: 20px;
+ }
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('coffee-bg.jpg') no-repeat center center/cover;
+    color: rgb(88, 32, 32);
+
+        }
+.hero-content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ z-index: 2;
+font-size: 10px;
+        }
+        
+
+       
+       
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative; 
+    z-index: 2;
+            
+}
+
+.hero p {
+    font-size: 20px ;
+}
+
+.hero h1{
+    font-size: 20px ;
+}
+
+.hero .btn {
+    color:rgb(100, 61, 9);
+    font-size: 20px;
+}
+
+.hero img {
+    width: 70%;
+    max-width: 1100px; 
+    height: auto;
+    display: block; 
+    margin: 20px auto; 
+    top: 0;
+        }
+.menu-items {
+   display: flex;
+   flex-wrap : wrap;
+   justify-content: center;
+   gap: 20px; 
+   padding: 20px;
+        }
+.menu h2 {
+    text-align: center;
+   font-size: 40px;
+   color:#6f4e37;
+        }
+        
+.about h2 {
+  text-align: center;
+ font-size: 40px;
+ color:#6f4e37;
+ }
+
+.about p{
+ text-align: center;
+ font-size: 20px;
+          
+ }
+
+.about {
+ padding-bottom: 40px;
+ padding-top: 40px;
+ background-color: white; 
+ border: 2px solid #6f4e37; 
+ border-radius: 10px;
+ max-width: 900px; 
+ margin : 20px auto;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+    
+
+
+.contact {
+ padding-top: 40px; 
+ padding-bottom: 40px;
+}
+
+
+.contact h2{
+   text-align: center;
+    font-size: 40px;
+   color:#6f4e37;
+ }
+    
+ .item {
+    max-width: 500px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px;
+}
+
+.item:hover {
+    background-color: #f5f5f5; 
+    transform: scale(1.05); 
+}
+
+.item h3, .item p {
+    transition: color 0.3s ease;
+}
+
+.item:hover h3, .item:hover p {
+    color: #6f4e37; 
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    border: none;
+    border-radius: 10px;
+    margin:  20px auto;
+    text-align: center;
+    font-weight: bold;
+            
+ }
+
+ .contact button {
+    font-weight: bold;
+ }
+footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6f4e37;
+            color: white;
+        }
+    
+
+
+        @media screen and (min-width: 1024px) {
+            header {
+                padding: 20px 50px;
+            }
+        
+            nav ul {
+                gap: 30px;
+            }
+        
+            .menu-items {
+                justify-content: flex-start;
+            }
+        
+            .item {
+                width: 30%;
+            }
+        
+            .hero h1 {
+                font-size: 48px;
+            }
+        
+            .hero p {
+                font-size: 24px;
+            }
+        
+            .hero .btn {
+                font-size: 18px;
+            }
+        }
+        
+        
+        
+        
+        /* For small screens (mobile devices) */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 0 10px;
+            }
+        
+            header {
+                padding: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        
+            .logo {
+                width: 100px;
+                align-self: center;
+            }
+        
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        
+            nav a {
+                font-size: 18px;
+                
+            }
+
+            .title h1{
+                align-items: center;
+            }
+        
+            .hero {
+                padding: 30px 10px;
+            }
+        
+            .hero h1 {
+                font-size: 10px;
+            }
+        
+            .hero p {
+                font-size: 12px;
+            }
+        
+            .hero .btn {
+                font-size: 12px;
+            }
+        
+            .menu-items {
+                flex-direction: column;
+            }
+        
+            .item {
+                width: 90%;
+                margin: 10px auto;
+            }
+        
+            .about h2 {
+                font-size: 32px;
+            }
+        
+            .about p {
+                font-size: 18px;
+            }
+        
+            .contact form {
+                max-width: 100%;
+            }
+        
+            footer {
+                padding: 10px;
+            }
+        }
