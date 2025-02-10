@@ -1,0 +1,586 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    
+}
+
+
+.top-bar {
+    display: flex;
+    position: fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    z-index: 1000;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c00;
+    color: #fff;
+    padding: 15px 15px;
+    font-size: 14px;
+}
+ 
+.top-bar .contact span {
+    padding: 5px 10px;
+    border: 2px solid white; 
+    border-radius: 10px; 
+    background-color: black; 
+    margin : 30px;
+    padding : 10px 10px;
+    font-size: 15px;;
+}
+
+.contact span:hover {
+    border : 2px solid black;
+}
+.top-bar .pay-now .btn {
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position : fixed;
+    top : 50px;
+    left : 0;
+    width : 100%;
+    z-index : 999;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+nav .logo img {
+    height: 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    
+}
+.nav-links li {
+    position: relative;
+    margin-right: 130px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid transparent; 
+}
+
+.nav-links a:hover {
+    color: black;
+    border: 2px solid red; 
+    padding: 8px 10px; 
+    border-radius: 5px; 
+    background-color: red;
+    
+}
+
+.dropdown > a::after {
+    content: " ▼"; 
+    font-size: 12px;
+    margin-left: 5px; 
+}
+
+
+.dropdown-menu a:hover {
+    color: white;
+    border: 2px solid red;
+    padding: 6px 8px;
+    border-radius: 5px;
+}
+.dropdown-menu {
+    position: absolute; 
+    background-color: white;
+    z-index: 1000; 
+    display: none; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding : 10px;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu li {
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.dropdown-menu li a {
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    z-index: 1; 
+    margin-top: 100px;
+
+}
+.hero-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 600px; 
+    display: flex;
+}
+
+.slides {
+    display: flex;
+    scroll-snap-type: x mandatory; 
+    overflow-x: scroll; 
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+.slides img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: center; 
+}
+
+
+.slides::-webkit-scrollbar {
+    display: none;
+}
+
+/* Decorative arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.arrow.left {
+    left: 10px; 
+}
+
+.arrow.right {
+    right: 10px; 
+}
+
+
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* About Section */
+
+  /* Container for the about section */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  /* About Content Styling */
+  .about-content {
+    flex: 1 1 55%;
+    max-width: 55%;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black ;
+    margin-bottom: 20px;
+  }
+
+  .about-content strong {
+    color : red;
+  }
+  
+  .about-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4b4b;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .about-content .btn:hover {
+    background-color: #e63939;
+  }
+
+  /* About Image Styling */
+.about-image {
+  max-width: 900%;
+}
+
+.about-image img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  
+}
+  
+  /* Features Section Styling */
+  .features {
+    flex: 1 1 40%;
+    max-width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  /* Features Heading */
+  .features-heading {
+    grid-column: span 2; /* Makes the heading span across both columns */
+    font-size: 1.5rem;
+    color: #002d7b;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Feature Card Styling */
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card i {
+    font-size: 2rem;
+    color: #ff4b4b;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card h4 {
+    font-size: 1rem;
+    color: #002d7b;
+  }
+  
+  
+
+  .advantages-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+  }
+  
+  .advantages-content {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Adjust width for balanced layout */
+  }
+  
+  .advantages-video {
+    background-color: #fff;
+    margin-bottom: 1px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 38%;
+  }
+  .advantages-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+
+  .advantages-video h2 {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .advantages-content ul {
+    list-style-type: disc;
+    margin-left: 10px;
+    color: #555;
+  }
+  
+  .advantages-content ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .advantages-video iframe {
+    display: block;
+    margin-left: 110px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .watch-more {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .watch-more:hover {
+    background-color: #c00;
+  }
+
+  .why-choose {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .why-choose h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #e63946;
+    color: #fff;
+  }
+  
+  .content {
+    
+    display : flex;
+    
+  }
+  
+  .content img {
+    flex: 0 0 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  
+  .content ul {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 1.5rem; /* Adds space to the left for bullets */
+  }
+  
+  .content li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem; /* Adds space between bullet points */
+  }
+
+
+  .student-reviews {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background for the review section */
+    text-align: center;
+  }
+  
+  .reviews-header {
+    background-color: #000; /* Black background for the header */
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .reviews-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .reviews-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .contact-btn {
+    font-size: 1.5rem;
+    color: red;
+    background-color: white; /* Red button */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .contact-btn:hover {
+    background-color: #cf7171;
+  }
+  
+  .review-tag p{
+     font-size: 2.5rem;
+     color: #000;
+  }
+  
+  .review-card {
+    margin: 2rem auto;
+    max-width: 1000px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .review-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .review-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .read-more {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .read-more:hover {
+    background-color: #333;
+  }
+  
+  
+  .success-stories {
+    text-align: center;
+    margin: 20px 20px;
+  }
+  
+  
+  .success-stories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .success-story-image {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .latest-blogs {
+    text-align: center;
+    margin: 20px 20px;
+  }
+  
+  
+  .blogs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .blog-section-image {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+  
+ 
+  .footer-section {
+    background-color: #000; /* Match the footer's background */
+    color: #fff;
+    text-align: center;
+
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-image {
+    max-width: 110%;
+    height: auto;
+  }
+  
+
+
+
+
